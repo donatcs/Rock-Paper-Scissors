@@ -39,6 +39,8 @@ function playRound() {
 }
 
 function game() {
-  return playRound();
+  return playRound(), playRound(), playRound(), playRound(), playRound()
+  
 }
+
 
