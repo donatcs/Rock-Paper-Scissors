@@ -48,7 +48,7 @@ function playRound() {
   //PLAYER ROCK
   if (playerSelection == "rock" && computerSelection == "paper") {
     computerScore += 1
-    result = ('You lost!' + "<br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
+    result = ('You lost!' + "<br><br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
     document.getElementById('result').innerHTML = result
     
   }
@@ -56,14 +56,14 @@ function playRound() {
   else if (playerSelection == "rock" && computerSelection == "rock") {
   computerScore += 0
   playerScore += 0
-  result = ('Thats a tie!' + "<br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
+  result = ('Thats a tie!' + "<br><br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
   document.getElementById('result').innerHTML = result
   
 }
 
   else if (playerSelection == "rock" && computerSelection == "scissor")  {
   playerScore += 1
-    result = ('You win!' + "<br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
+    result = ('You win!' + "<br><br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
     document.getElementById('result').innerHTML = result
     return
   
@@ -88,18 +88,18 @@ function playRound2() {
       if (playerSelection == "paper" && computerSelection == "paper") {
     computerScore += 0
     playerScore += 0
-    result = ('Thats a tie!' + "<br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
+    result = ('Thats a tie!' + "<br><br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
     document.getElementById('result').innerHTML = result
       
   }
     else if (playerSelection == "paper" && computerSelection == "rock") {
   playerScore += 1
-  result = ('You win!' + "<br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
+  result = ('You win!' + "<br><br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
   document.getElementById('result').innerHTML = result
   }
     else if (playerSelection == "paper" && computerSelection == "scissor"){
   computerScore += 1
-     result = ('You lost!' + "<br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
+     result = ('You lost!' + "<br><br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
      document.getElementById('result').innerHTML = result
      return
      }
@@ -120,19 +120,19 @@ function playRound3() {
   //PLAYER SCISSOR
     if (playerSelection == "scissor" && computerSelection == "paper"){
   playerScore += 1
-  result = ('You win!' + "<br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
+  result = ('You win!' + "<br><br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
   document.getElementById('result').innerHTML = result
   }
     else if (playerSelection == "scissor" && computerSelection == "rock"){
     computerScore += 1
-    result = ('You lost!' + "<br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
+    result = ('You lost!' + "<br><br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
     document.getElementById('result').innerHTML = result
     }
 
     else if (playerSelection == "scissor" && computerSelection == "scissor"){
   computerScore += 0
     playerScore += 0
-    result = ('Thats a tie!' + "<br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
+    result = ('Thats a tie!' + "<br><br>Player Score:" + playerScore + "<br>Computer Score:" + computerScore)
     document.getElementById('result').innerHTML = result
       return
   }
